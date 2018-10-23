@@ -1,5 +1,5 @@
-function editor = find_editor(varargin)
-%FIND_EDITOR search environment for default text editor.
+function editor = search_env(varargin)
+%SEARCH_ENV search environment for default text editor.
 
 % search env for default editor
 for k=1:length(varargin)
