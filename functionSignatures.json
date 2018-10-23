@@ -3,7 +3,7 @@
 {
     "inputs":
     [
-        {"name":"varargin", "kind":"optional", "type":"choices={'add','am','annotate','apply','archive','bisect','blame','br','branch','bundle','checkout','cherry','cherry-pick','clean','clone','cm','co','commit','config','describe','diff','difftool','fetch','filter-branch','format-patch','fsck','gc','get-tar-commit-id','grep','help','imap-send','init','instaweb','interpret-trailers','log','merge','mergetool','mv','name-rev','notes','pull','push','rebase','reflog','remote','repack','replace','request-pull','reset','revert','rm','shortlog','show','show-branch','st','stage','stash','status','submodule','subtree','tag','verify-commit','whatchanged','worktree'}"},
+        {"name":"varargin", "kind":"required", "type":"choices={'add','am','annotate','apply','archive','bisect','blame','br','branch','bundle','checkout','cherry','cherry-pick','clean','clone','cm','co','commit','config','describe','diff','difftool','fetch','filter-branch','format-patch','fsck','gc','get-tar-commit-id','grep','help','imap-send','init','instaweb','interpret-trailers','log','merge','mergetool','mv','name-rev','notes','pull','push','rebase','reflog','remote','repack','replace','request-pull','reset','revert','rm','shortlog','show','show-branch','st','stage','stash','status','submodule','subtree','tag','verify-commit','whatchanged','worktree'}"},
         {"name":"varargin", "kind":"optional", "multiplicity":"append", "type":"filepath"}
     ]
 }
