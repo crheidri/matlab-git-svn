@@ -1,10 +1,12 @@
-function editor = search_env(varargin)
-%SEARCH_ENV search environment for default text editor.
+function value = search_env(varargin)
+%SEARCH_ENV search for environment variables.
+%   SEARCH_ENV(VAR1,VAR2,...) searches for system environment variables
+%   VAR1,VAR2,... and returns the first non-empty value.
 
 % search env for default editor
 for k=1:length(varargin)
-    editor = getenv(varargin{k});
-    if ~isempty(editor)
+    value = getenv(varargin{k});
+    if ~isempty(value)
         return
     end
 end
@@ -18,6 +20,6 @@ warning(...
 % turn off this warning
 [~, MSGID] = lastwarn();
 warning('off', MSGID);
-editor='';
+value='';
 
 end
